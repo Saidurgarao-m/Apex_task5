@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Professional Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      color: #333;
+      transition: background 0.3s;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #f8f8f8;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      color: #203a43;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 15px;
+      font-size: 1.1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      padding: 15px;
+      background: #203a43;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0f2027;
+    }
+    footer {
+      background: #203a43;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Professional Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate and detail-oriented web developer who crafts responsive and high-performance websites. With a strong foundation in modern web technologies, I transform creative ideas into user-friendly digital experiences.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>E-commerce App</h3>
+          <p>Developed a robust online shopping platform with user login, real-time search, and a secure checkout system.</p>
+          <a href="https://github.com/yourusername/ecommerce-app" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Blog CMS</h3>
+          <p>Created a fully-functional blog content management system with admin dashboard and post scheduling.</p>
+          <a href="https://github.com/yourusername/blog-cms" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Responsive Portfolio</h3>
+          <p>This professional portfolio showcases my skills and includes a dynamic contact form and animations.</p>
+          <a href="https://yourportfolio.com" target="_blank">Visit Site</a>
+        </div>
+        <div class="project">
+          <h3>Task Tracker App</h3>
+          <p>Built a productivity app with local storage, task filters, and responsive UI using JavaScript.</p>
+          <a href="https://github.com/yourusername/task-tracker" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed with care and creativity</p>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Message sent successfully!");
+    });
+  </script>
+</body>
+</html>
+
+
